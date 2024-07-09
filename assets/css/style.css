@@ -1,35 +1,100 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 .container {
-    max-width: 600px;
-    margin: auto;
-    background: white;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 h1 {
-    text-align: center;
+    font-size: 2.5rem;
+    color: #222;
 }
 
 form {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
-#search-history, #current-weather, #forecast {
-    margin-top: 20px;
+#city-input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #007bff;
+    width: 70%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .weather-icon {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+#forecast div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#forecast div:last-child {
+    border-bottom: none;
+}
+
+#search-history {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#search-history p {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#search-history p:hover {
+    background-color: #f1f1f1;
 }
